@@ -5,34 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>   
 <body>
 
-    <header class="bg-cover h-[2000px] bg-[url('../img/Effects.svg')]">
-        <div class="container mx-auto">
+    <header class="relative h-[2000px] bg-cover bg-[url('../img/Effects.svg')]">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-blue/70 to-black/100"></div>
+        <div id="Home" class="relative mx-auto max-w-[900px] px-4 z-10 ">
             <nav class="flex justify-between items-center h-24 text-white">
-                <ul class="flex space-x-8 text-2xl ">
-                    <li><a href="#" >Home</a></li>
-                    <li><a href="#" >About</a></li>
-                    <li><a href="#contact" >Contact</a></li>
+                <ul class="flex space-x-8 text-2xl">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
 
-            <section class="mt-[250px] w-[540px]">
-                <div>
-                    <h1 class="text-5xl text-white">Suphawida Sadao</h1>
+            <section class="p-14 pt-40 justify-center items-center flex">
+                <div class="w-[250px] h-[250px] rounded-full overflow-hidden border-4 border-white shadow-lg ">
+                    <img src="">
                 </div>
-                
-                
+                <div class="p-14 font-bold text-white justify-center items-center">
+                    <span class=" text-4xl">Suphawida Sadao</span>
+                    <div class="flex pt-4 text-2xl">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span class="pl-4 ">Thailand</span>
+                    </div>
+                  
+                    
+                </div>
             </section>
 
-            <section id="contact" class="mt-72">
-                <h2 class="text-3xl"></h2>
+            <section id="About" class="mt-28 flex justify-center items-center flex-col space-y-8"> <!-- ใช้ space-y-8 เพื่อเพิ่มระยะห่างระหว่างกล่อง -->
+                <h2 class="text-3xl text-white m-8">About</h2> 
                 
+                <div class="p-10 rounded-3xl shadow-lg max-w-[900px] text-center" style="background-color: #1f1f23;">
+                    <p class="text-lg text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla a iste eos ipsa ab vero dolores ullam esse asperiores?</p>
+                </div>
+                <div class="p-8 rounded-3xl shadow-lg max-w-[900px] text-center" style="background-color: #1f1f23;">
+                    <p class="text-lg text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, placeat! Fugit, velit repudiandae quisquam fugiat illum molestiae dolorum numquam esse!</p>
+                </div>
+                <div class="p-8 rounded-3xl shadow-lg max-w-[900px] text-center" style="background-color: #1f1f23;">
+                    <p class="text-lg text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, eveniet. Vel veniam, ipsa quam sapiente ratione fuga error dolorum. Illo.</p>
+                </div>
+            </section>
+
+            <section id="contact" class="mt-28 flex justify-center items-center flex-col space-y-8"> <!-- ใช้ space-y-8 เพื่อเพิ่มระยะห่างระหว่างกล่อง -->
+                <h2 class="text-3xl text-white m-8">Contact</h2>
+                <div class="flex space-x-6 mt-20">
+                    <a href="https://facebook.com" target="_blank" class="text-gray-300 hover:text-white">
+                        <i class="fab fa-facebook text-2xl"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="text-gray-300 hover:text-white">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="text-gray-300 hover:text-white">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="text-gray-300 hover:text-white">
+                        <i class="fa-brands fa-github text-2xl"></i>
+                    </a>
+                </div> 
             </section>
         </div>
     </header>
 
-    
 </body>
 </html>
